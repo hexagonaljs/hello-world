@@ -1,0 +1,5 @@
+class UseCase
+  constructor: ->
+    
+  start: =>
+    
