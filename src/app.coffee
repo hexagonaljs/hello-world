@@ -8,8 +8,7 @@ class App
   constructor: ->
     useCase      = new UseCase()
     gui          = new Gui()
-    localStorage = new LocalStorage("app")
-    glue         = new Glue(useCase, gui, localStorage)
+    glue         = new Glue(useCase, gui)
     
     useCase.start()
     window.useCase = useCase

@@ -2,11 +2,10 @@ var Glue;
 
 Glue = (function() {
 
-  function Glue(useCase, gui, storage) {
+  function Glue(useCase, gui) {
     var _this = this;
     this.useCase = useCase;
     this.gui = gui;
-    this.storage = storage;
     After(this.useCase, "askForName", function() {
       return _this.gui.showAskForName();
     });
