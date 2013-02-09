@@ -10,7 +10,19 @@
 	<div class="main">
 	</div>
 
-  <script type="x-handlebars-template" id="welcome-template">
+  <script type="x-handlebars-template" id="ask-for-name-template">
+    <div class="ask-for-name">
+      <p>What is your name?</p>
+      <input type="text"   id="name-input"/>
+      <input type="button" id="confirm-name-button" value="Confirm"/>
+    </div>
+  </script>
+
+  <script type="x-handlebars-template" id="greet-message-template">
+    <div class="greet-message">
+      <p>Hello, {{name}}</p>
+      <a href="#" id="restart-link">Restart</a>
+    </div>
   </script>
 
   <script src="vendors/base.js"></script>

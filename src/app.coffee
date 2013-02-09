@@ -12,6 +12,7 @@ class App
     glue         = new Glue(useCase, gui, localStorage)
     
     useCase.start()
+    window.useCase = useCase
 
 new App()
 

@@ -9,6 +9,7 @@ App = (function() {
     localStorage = new LocalStorage("app");
     glue = new Glue(useCase, gui, localStorage);
     useCase.start();
+    window.useCase = useCase;
   }
 
   return App;
