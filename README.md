@@ -24,7 +24,6 @@ class App
     glue         = new Glue(useCase, gui)
     
     useCase.start()
-    window.useCase = useCase
 
 new App()
 ```
@@ -109,9 +108,6 @@ class Glue
     
     After(@gui, "restartClicked", => @useCase.restart())
     After(@gui, "confirmNameButtonClicked", (name) => @useCase.nameProvided(name))
-
-    LogAll(@useCase)
-    LogAll(@gui)
 ```
 
 You can find the definition of the After method in the utils.coffee file. It's basically wrapping one function with another. If you look at:
