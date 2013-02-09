@@ -2,14 +2,14 @@ class UseCase
   constructor: ->
     
   start: =>
-  	@askForName()
+    @askForName()
 
   askForName: =>
 
   nameProvided: (name) =>
-  	@greetUser(name)
+    @greetUser(name)
 
   greetUser: (name) =>
 
   restart: =>
-  	@askForName()
+    @askForName()
