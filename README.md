@@ -118,8 +118,10 @@ After(@useCase, "askForName", => @gui.showAskForName())
 
 What it does, is replacing the original @useCase.askForName method with something like:
 
+```coffeescript
 askForName: =>
   # original code
   => @gui.showAskForName()
+```
 
 The use case and gui are merged runtime. The merge rules are defines in the glue code.
