@@ -14,6 +14,7 @@ How to work on it?
 ------------------
 
   $ npm install -g coffee-toaster
+  
   $ toaster -dw
 
 
