@@ -13,8 +13,8 @@ Just clone the repo and open index.html.
 How to work on it?
 ------------------
 
-$ npm install -g coffee-toaster
-$ toaster -dw
+  $ npm install -g coffee-toaster
+  $ toaster -dw
 
 
 The app object
