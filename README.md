@@ -5,10 +5,22 @@ This is the simplest possible hexagonaljs app.
 It shows all the basic concepts of a hexagonaljs architecture.
 
 
+How to run it?
+--------------
+
+Just clone the repo and open index.html.
+
+How to work on it?
+------------------
+
+$ npm install -g coffee-toaster
+$ toaster -dw
+
+
 The app object
 --------------
 
-You can think of the app object as of the main method. This is the starting point of the application. The app object initializes the use case object and the adapters. At the end it passed all of them to the glue code. Often it's also starting the useCase object.
+This is the starting point of the application. The app object initializes the use case object and the adapters. At the end it passes all of them to the glue code. Often it's also starting the useCase object.
 
 ```coffeescript
 #<< utils
